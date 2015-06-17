@@ -3,7 +3,17 @@
 // --------------------------------------------------
 
 .global-nav {
+	@extend %page-wrapper;
+	align-items: center;
 	background-color: black;
+	display: flex;
+	flex-direction: row;
 	height: 60px;
+	justify-content: flex-start;
 	width: 100%;
+}
+
+.global-nav__logo {
+	color: $text-on-dark-bg;
+	text-decoration: none;
 }
