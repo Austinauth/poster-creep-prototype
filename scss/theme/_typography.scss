@@ -19,4 +19,25 @@ $ts-scale: 1.125; // Major Second
   @return $ts-base * pow($ts-scale,$n);
 }
 
-$base-font-size: 16px; 
+$base-font-size: 16px;
+
+// Font Declarations
+// --------------------------------------------------
+
+%adelle {
+	font-family: "adelle", serif;
+}
+
+%adelle--bold {
+	@extend %adelle;
+	font-weight: 700;
+}
+
+%adelle-sans {
+	font-family: "adelle-sans", sans-serif;
+}
+
+%adelle-sans--bold {
+	@extend %adelle-sans;
+	font-weight: 700;
+}
