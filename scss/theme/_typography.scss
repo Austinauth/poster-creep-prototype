@@ -1,3 +1,22 @@
 // --------------------------------------------------
 // Typography
 // --------------------------------------------------
+
+// ----- TYPOGRAPHY VARIABLES
+//
+// USAGE
+//
+// @function type-scale($n, $ts-base, $ts-ratio)
+// $n represents the exponent of the type scale as a number. (required)
+// type-scale(0) will return the base type size (1rem or 16px)
+// $ts-base represents the base size for the scale. Defaults to the global base font size as a number with units. (optional)
+// $ts-scale rrepresents the scale in use. Defaults to the global scale. (optional)
+
+$ts-base: 1rem;
+$ts-scale: 1.125; // Major Second
+
+@function type-scale($n, $ts-base:$ts-base, $ts-scale:$ts-scale){
+  @return $ts-base * pow($ts-scale,$n);
+}
+
+$base-font-size: 16px; 
