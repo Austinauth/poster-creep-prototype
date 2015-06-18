@@ -1,21 +1,16 @@
 // --------------------------------------------------
-// Global Nav
+// Footer
 // --------------------------------------------------
 
-.global-nav {
+.page-footer {
 	@extend %page-wrapper;
+	@extend %adelle-sans;
 	align-items: center;
 	background-color: black;
+	color: $text-on-dark-bg;
 	display: flex;
 	flex-direction: row;
 	height: 60px;
-	justify-content: flex-start;
-	margin-bottom: 2rem;
+	justify-content: center;
 	width: 100%;
-}
-
-.global-nav__logo {
-	@extend %adelle-sans--bold;
-	color: $text-on-dark-bg;
-	text-decoration: none;
 }

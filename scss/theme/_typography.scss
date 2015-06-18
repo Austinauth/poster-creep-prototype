@@ -13,7 +13,7 @@
 // $ts-scale rrepresents the scale in use. Defaults to the global scale. (optional)
 
 $ts-base: 1rem;
-$ts-scale: 1.125; // Major Second
+$ts-scale: 1.200; // Minor Third
 
 @function type-scale($n, $ts-base:$ts-base, $ts-scale:$ts-scale){
   @return $ts-base * pow($ts-scale,$n);
@@ -40,4 +40,12 @@ $base-font-size: 16px;
 %adelle-sans--bold {
 	@extend %adelle-sans;
 	font-weight: 700;
+}
+
+// Links
+// --------------------------------------------------
+
+%base-link {
+	color: black;
+	text-decoration: none;
 }

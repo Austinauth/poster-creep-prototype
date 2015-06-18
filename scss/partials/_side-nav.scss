@@ -1,0 +1,36 @@
+// --------------------------------------------------
+// Side Nav
+// --------------------------------------------------
+
+.side-nav {
+	padding: 3rem 0;
+}
+
+.side-nav__logo {
+	display: none;
+}
+
+.side-nav__copy {
+	display: none;
+}
+
+.side-nav__social-list {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+}
+
+.side-nav__social-item {
+	margin-right: 1rem;
+
+	&:last-of-type{
+		margin-right: 0;
+	}
+}
+
+.side-nav__social-link {
+	@extend %base-link;
+	font-size: 1.44rem;
+}
