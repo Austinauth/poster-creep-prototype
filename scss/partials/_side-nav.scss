@@ -4,14 +4,31 @@
 
 .side-nav {
 	padding: 3rem 0;
+
+	@media screen and (min-width: 570px){
+		flex: 25% 0 0;
+		margin-right: 5%;
+		padding: 0 0;
+	}
 }
 
 .side-nav__logo {
 	display: none;
+	margin-bottom: 1.5rem;
+	max-width: 100%;
+
+	@media screen and (min-width: 570px){
+		display: block;
+	}
 }
 
 .side-nav__copy {
+	@extend %base-copy;
 	display: none;
+
+	@media screen and (min-width: 570px){
+		display: block;
+	}
 }
 
 .side-nav__social-list {
@@ -19,7 +36,10 @@
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-	margin: 0;
+
+	@media screen and (min-width: 570px){
+		justify-content: flex-start;
+	}
 }
 
 .side-nav__social-item {
