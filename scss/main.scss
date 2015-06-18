@@ -1,14 +1,15 @@
 // --------------------------------------------------
 // Styles and Partials
 // --------------------------------------------------
-@import 'theme/reset';
 @import 'theme/colors';
 @import 'theme/layout';
 @import 'theme/typography';
+@import 'theme/reset';
 
 // Partials
 // --------------------------------------------------
 @import 'partials/global-nav';
 @import 'partials/side-nav';
 @import 'partials/article-post';
+@import 'partials/load-more';
 @import 'partials/page-footer';

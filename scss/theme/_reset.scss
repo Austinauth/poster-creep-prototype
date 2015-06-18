@@ -33,6 +33,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
+	color: $text-on-light-bg;
 	line-height: 1;
 }
 ol, ul {

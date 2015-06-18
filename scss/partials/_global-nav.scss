@@ -5,7 +5,7 @@
 .global-nav {
 	@extend %page-wrapper;
 	align-items: center;
-	background-color: black;
+	background-color: $dark-bg;
 	display: flex;
 	flex-direction: row;
 	height: 60px;

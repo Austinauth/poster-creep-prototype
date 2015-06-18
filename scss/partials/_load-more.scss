@@ -1,0 +1,14 @@
+// --------------------------------------------------
+// Load More
+// --------------------------------------------------
+
+.load-more {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.load-more__btn {
+	@extend %base-btn;
+}

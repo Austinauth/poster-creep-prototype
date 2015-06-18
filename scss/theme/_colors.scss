@@ -5,6 +5,15 @@
 // White
 $white: #fff;
 
+// Grays
+$dark-gray: #212121;
+$light-gray: #939597;
+
 // Color Roles
 // --------------------------------------------------
+$dark-bg: $dark-gray;
 $text-on-dark-bg: $white;
+
+$text-on-light-bg: $dark-gray;
+
+$secondary-text: $light-gray;

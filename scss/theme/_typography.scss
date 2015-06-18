@@ -49,3 +49,19 @@ $base-font-size: 16px;
 	color: black;
 	text-decoration: none;
 }
+
+// Buttons
+// --------------------------------------------------
+
+%base-btn {
+	@extend %adelle;
+	border: 1px solid $dark-bg;
+	color: black;
+	display: inline-block;
+	padding: .5rem 1rem;
+	text-decoration: none;
+
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}

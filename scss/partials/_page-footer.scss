@@ -6,7 +6,7 @@
 	@extend %page-wrapper;
 	@extend %adelle-sans;
 	align-items: center;
-	background-color: black;
+	background-color: $dark-bg;
 	color: $text-on-dark-bg;
 	display: flex;
 	flex-direction: row;
