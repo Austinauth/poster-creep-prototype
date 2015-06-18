@@ -9,4 +9,13 @@
 
 .content-wrapper {
 	@extend %page-wrapper;
+
+	@media screen and (min-width: 570px){
+		max-width: 85%;
+	}// Convert to rems
+
+	@media screen and (min-width: 840px){
+		max-width: 800px;
+	}
+
 }
