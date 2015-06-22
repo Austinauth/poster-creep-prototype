@@ -7,22 +7,18 @@
 }
 
 .article-post__heading {
-	@extend %adelle--bold;
+	@extend %base-heading;
 	font-size: 1.728rem; /* 2.074rem; */
-	line-height: 1.5;
-	margin-bottom: 1.5rem;
 	// font-size: type-scale(4);
 
 	a {
-		color: black; // Refactor?
+		color: $text-on-light-bg;
 		text-decoration: none;
 	}
 }
 
 .article-post__copy {
-	@extend %adelle;
-	line-height: 1.5;
-	margin-bottom: 2rem;
+	@extend %base-copy;
 }
 
 .article-post__img {
@@ -45,12 +41,12 @@
 
 .article-post__read-more {
 	@extend %base-btn;
+	margin-bottom: 1.5rem;
 	margin-right: 1rem;
 }
 
 .article-post__tag-list {
-	display: inline-block;
-	font-size: .833rem;
+	
 }
 
 .article-post__tag {
