@@ -14,30 +14,72 @@
 </head>
 <body>
 
-	<!-- Global Header -->
-	<header class="global-header">
-		
-		<!-- Global Header Top - Base Mobile Header -->
-		<nav class="global-header--top">
-			<div class="global-header__brand-container">
-				<a class="global-header__brand-link" href="#">
-					<img class="global-header__brand-logo" src="img/logo.svg">
-				</a>
-				<button class="global-header__nav-toggle"><i class="fa fa-bars"></i></button>
-			</div>
-			<ul class="global-header__nav-list">
-				<li class="global-header__nav-item">Search</li>
-				<li class="global-header__nav-item"><a class="global-header__nav-link" href="#">Archive</a></li>
-				<li class="global-header__nav-item"><a class="global-header__nav-link" href="#">About</a></li>
-			</ul>
-		</nav>
+<!-- Global Header -->
+<header class="global-header">
 
-		<!-- Global Header Bottom - Display at Desktop -->
-		<div class="global-header--bottom"></div>
-	</header>	
+	<!-- Global Header - Top Section -->
+	<div class="global-header--top">
 
+		<div class="global-header__brand-header">
+			<a class="global-header__brand"href="#">Poster Creep</a>
+			<button id="menuToggle" class="global-header__nav-toggle" type="button"><i class="fa fa-bars"></i></button>
+		</div>
+
+		<!-- Toggle Content -->
+		<ul class="global-header__nav-list">
+			<li class="global-header__nav-item">
+				<form class="global-header__search-bar">
+					<input type="submit" class="search" value="&#xf002;"/>
+  				<input class="search-bar__input" type="search" name="postersearch">
+				</form>
+			</li>
+			<li class="global-header__nav-item"><a class="global-header__nav-link"href="#">Archive</a></li>
+		</ul>
+	</div>
+
+	<!-- Global Header - Bottom Section -->
+	<div class="global-header--bottom">
+		<h3 class="global-header__sub-heading">About</h3>
+		<p class="global-header__copy">Poster Creep is a blog dedicated to bringing you the latest poster news.</p>
+		<h3 class="global-header__sub-heading">Find Us</h3>
+		<ul>
+			<li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
+			<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+			<li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+			<li><a href="#"><i class="fa fa-envelope-o"></i></a></li>
+		</ul>
+	</div>
+</header>
+
+<!-- Main Content -->
+<!-- 	<div class="page-wrapper">
+		<article class="article-post">
+			<figure>
+				<a href="#"><img class="article-post__img" src="http://placehold.it/350x200"></a>
+			</figure>
+			<div class="article-post__caption">
+				<h2 class="article-post__heading"><a href="#">Mondo Gallery: When Dinosaurs Ruled the Earth</a></h2>
+				<time class="article-post__post-date"><a href="#">May 15, 2015</a></time>
+				<p class="article-post__copy">We're thrilled to announce our next gallery show, When Dinosaurs Ruled the Earth, celebrating Jurassic Park and the highly anticipated Jurassic World (in theaters June 12). The exhibit, on display June 12th – June 27th...</p>
+				<a href="#" class="article-post__read-more">Continue Reading</a>
+				<ul class="article-post__tag-list">
+					<li class="article-post__tag"><i class="fa fa-tags"></i></li>
+					<li class="article-post__tag">Jurassic Park</li>
+					<li class="article-post__tag">Mondo</li>
+					<li class="article-post__tag">Movie</li>
+				</ul>
+			</div> -->
+	<!-- 	</article>
+	</div> -->
 
 <!-- Scripts -->
-<script src="js/j.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+	  $('#menuToggle').click(function(){
+	    $('.global-header__nav-list').slideToggle('slow');
+	  });
+	});
+</script>
 </body>
 </html>

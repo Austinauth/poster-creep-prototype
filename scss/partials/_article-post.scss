@@ -3,16 +3,41 @@
 // --------------------------------------------------
 
 .article-post {
-	margin-bottom: 3rem;
+	margin-bottom: 1rem;
+
+	//Flex
+	display: flex;
+	flex-direction: column;
+}
+
+.article-post__img {
+	vertical-align: bottom;
+	width: 100%;
+}
+
+.article-post__caption {
+	border-bottom: 1px solid $light-gray;
+	border-left: 1px solid $light-gray;
+	border-right: 1px solid $light-gray;
+	padding: .5rem;
 }
 
 .article-post__heading {
 	@extend %base-heading;
-	font-size: 1.728rem; /* 2.074rem; */
-	// font-size: type-scale(4);
+	font-size: 1.266rem;
 
 	a {
-		color: $text-on-light-bg;
+		@extend %base-link;
+	}
+}
+
+.article-post__post-date {
+	@extend %adelle;
+	display: block;
+	margin-bottom: 1rem;
+
+	a{
+		color: $secondary-text;
 		text-decoration: none;
 	}
 }
@@ -21,43 +46,63 @@
 	@extend %base-copy;
 }
 
-.article-post__img {
-	margin-bottom: 1.5rem;
-	max-width: 100%;
-	width: 100%;
-}
 
-.article-post__post-date {
-	@extend %adelle-sans;
-	display: block;
-	margin-bottom: 1rem;
-	text-transform: uppercase;
+// .article-post {
+// 	margin-bottom: 3rem;
+// }
 
-	a{
-		color: $secondary-text;;
-		text-decoration: none;
-	}
-}
+// .article-post__heading {
+// 	@extend %base-heading;
+// 	font-size: 1.728rem; /* 2.074rem; */
+// 	// font-size: type-scale(4);
 
-.article-post__read-more {
-	@extend %base-btn;
-	margin-bottom: 1.5rem;
-	margin-right: 1rem;
-}
+// 	a {
+// 		color: $text-on-light-bg;
+// 		text-decoration: none;
+// 	}
+// }
 
-.article-post__tag-list {
+// .article-post__copy {
+// 	@extend %base-copy;
+// }
+
+// .article-post__img {
+// 	margin-bottom: 1.5rem;
+// 	max-width: 100%;
+// 	width: 100%;
+// }
+
+// .article-post__post-date {
+// 	@extend %adelle-sans;
+// 	display: block;
+// 	margin-bottom: 1rem;
+// 	text-transform: uppercase;
+
+// 	a{
+// 		color: $secondary-text;;
+// 		text-decoration: none;
+// 	}
+// }
+
+// .article-post__read-more {
+// 	@extend %base-btn;
+// 	margin-bottom: 1.5rem;
+// 	margin-right: 1rem;
+// }
+
+// .article-post__tag-list {
 	
-}
+// }
 
-.article-post__tag {
-	@extend %adelle;
-	display: inline;
+// .article-post__tag {
+// 	@extend %adelle;
+// 	display: inline;
 
-	&:first-of-type {
-		margin-right: .5rem;
-	}
+// 	&:first-of-type {
+// 		margin-right: .5rem;
+// 	}
 
-	&:not(:first-of-type):not(:last-of-type)::after {
- 		content: ", ";
- 	}
-}
+// 	&:not(:first-of-type):not(:last-of-type)::after {
+//  		content: ", ";
+//  	}
+// }

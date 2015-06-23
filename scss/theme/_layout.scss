@@ -8,20 +8,24 @@
 
 	margin: 0 auto;
 	margin-bottom: 50px;
-	padding: 0 1rem;
+	padding: 0 .5rem;
 }
 
 .page-wrapper {
 	@extend %page-wrapper;
-
-	@media screen and (min-width: 570px){
-		flex-direction: row-reverse;
-		
-		padding-top: 75px;
-		max-width: 85%;
-	}// Convert to rems
-
-	@media screen and (min-width: 860px){
-		max-width: 840px;
-	}
 }
+
+// .page-wrapper {
+// 	@extend %page-wrapper;
+
+// 	@media screen and (min-width: 570px){
+// 		flex-direction: row-reverse;
+		
+// 		padding-top: 75px;
+// 		max-width: 85%;
+// 	}// Convert to rems
+
+// 	@media screen and (min-width: 860px){
+// 		max-width: 840px;
+// 	}
+// }

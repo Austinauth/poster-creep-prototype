@@ -46,23 +46,23 @@ $base-font-size: 16px; // Note: for some reason body copy is .875rem (not part o
 // --------------------------------------------------
 
 %base-copy {
-	@extend %adelle;
+	@extend %adelle-sans;
 	font-size: 1rem;
 	line-height: 1.6;
-	margin-bottom: 1.5rem;
+	margin-bottom: 1rem;
 }
 
 %base-heading {
-	@extend %adelle--bold;
+	@extend %adelle-sans--bold;
 	line-height: 1.5;
-	margin-bottom: 1.5rem;
+	margin-bottom: 1rem;
 }
 
 // Links
 // --------------------------------------------------
 
 %base-link {
-	color: black;
+	color: $text-on-light-bg;
 	text-decoration: none;
 }
 
