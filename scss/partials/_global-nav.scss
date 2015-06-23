@@ -2,24 +2,107 @@
 // Global Nav
 // --------------------------------------------------
 
-.global-nav {
-	@extend %page-wrapper;
-	align-items: center;
-	background-color: $dark-bg;
+.global-header {
+	border-bottom: 1px solid $light-gray;
+	padding: 10px 20px;
+}
+
+// Global Nav -- Top
+// --------------------------------------------------
+
+.global-header--top {
+
+	// Flex
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
+}
+
+.global-header__brand-container {
+
+	// Flex
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.global-header__brand-logo {
+	max-width: 100%;
 	height: 60px;
-	justify-content: flex-start;
-	margin-bottom: 2rem;
-	width: 100%;
-
-	@media screen and (min-width: 570px){
-		display: none;
-	}
 }
 
-.global-nav__logo {
-	@extend %adelle-sans;
-	color: $text-on-dark-bg;
-	text-decoration: none;
+.global-header__nav-list {
+	display: none;
 }
+
+.global-header__nav-link {
+	display: block;
+	padding-bottom: 20px;
+}
+
+// Global Nav -- Bottom
+// --------------------------------------------------
+
+.global-header--bottom {
+	display: none;
+}
+
+// .global-header {
+// 	border-bottom: 1px solid $light-gray;
+// 	height: 80px;
+// 	padding: 0 20px;
+// 	width: 100%;
+
+// 	// Flex
+// 	align-items: center;
+// 	display: flex;
+// 	// flex-direction: column;
+// }
+
+// .global-header__main-bar {
+// 	width: 100%;
+// 	align-items: center;
+// 	display: flex;
+// 	justify-content: space-between;
+// }
+
+// .global-header__brand-link {
+// 	height: 60px;
+// }
+
+// .global-header__brand-logo {
+// 	max-width: 100%;
+// 	height: 60px;
+// }
+
+// .global-header__nav-toggle {
+// 	display: block;
+// }
+
+// .global-header__nav-list {
+// 	// display: none;
+// }
+
+
+// .global-nav {
+// 	@extend %page-wrapper;
+// 	align-items: center;
+// 	border-bottom: 1px solid $light-gray;
+// 	display: flex;
+// 	flex-direction: row;
+// 	height: 60px;
+// 	justify-content: flex-start;
+// 	margin-bottom: 2rem;
+// 	width: 100%;
+
+// 	@media screen and (min-width: 570px){
+// 		display: none;
+// 	}
+// }
+
+// .global-nav__brand-logo {
+// 	max-width: 100%;
+// 	width: 100%;
+// 	// @extend %adelle-sans;
+// 	// color: $text-on-light-bg;
+// 	// text-decoration: none;
+// }
